@@ -1,0 +1,90 @@
+.hero {
+    background-color: #fafcfc;
+
+    &-block {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0px 20px;
+        background: url("../img/hero_bg.png") no-repeat right 180px;
+        min-height: 887px;
+
+        &__name {
+            position: relative;
+            padding-left: 25px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: -5px;
+                left: 0;
+                width: 5px;
+                height: 90px;
+                background-color: #18a3dd;
+                border-radius: 4px;
+            }
+        }
+
+        &__title {
+            color: #333740;
+            font-family: "Raleway";
+            font-size: 72px;
+            font-weight: 900;
+            line-height: 35px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        &__subtitle {
+            color: #333740;
+            font-family: "Raleway";
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 24px;
+            letter-spacing: 0.6px;
+            margin: 0;
+            margin-top: 30px;
+        }
+
+        &__text {
+            margin-top: 45px;
+            color: #666666;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0.4px;
+        }
+
+        &__content {
+            margin-top: 300px;
+        }
+
+        &__btn {
+            width: 108px;
+            margin-top:0;
+
+            &-video {
+                text-decoration: none;
+                width: 151px;
+                color: #333740;
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.4px;
+                align-self: center;
+                padding:0 5px;
+                margin-left:20px;
+            }
+        }
+
+        &-links {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top:40px;
+            
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.contact{
+    min-height:724px;
+    &-block{
+        max-width:560px;
+        margin:0 auto;
+        &-form{     
+            &-input,
+            &-textarea{
+                width:100%;
+            }
+            &-input{
+                border:none;
+                border-bottom:1px solid #ebebeb;
+                padding:10px 0;
+            }         
+            &-textarea{
+                border:none;
+                border-bottom:1px solid #ebebeb; 
+                resize: none;
+            }
+            &-btn{
+                border:none;
+                margin:0 auto;
+                width:226px;
+                cursor: pointer;
+            }      
+            &-row{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding:20px 0;      
+            &:first-child .contact-block-form-group:last-child input{
+                width:261px;
+                margin-left:20px;
+                      
+            }
+            &:first-child .contact-block-form-group:first-child input{
+                width:261px; 
+            }
+            }                
+            &-group{
+                flex-basis:100%;
+            }
+
+        }
+    }
+}

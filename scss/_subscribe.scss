@@ -1,0 +1,36 @@
+.subscribe{
+    min-height:402px;
+    background:rgba(black,0.97) url("../img/subscribe_bg.png") no-repeat center center;
+    background-size:contain;
+    &__title{
+        color: #e5e5e5;
+    }
+    &__subtitle{
+        color: #767a7d;
+    }
+    &-block{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        &__content{
+            background:rgba(#000000,0.4);
+            border-radius: 10px;
+            padding:36px 32px;
+
+        }
+        &__btn{
+            display:inline-block;
+            margin:0;
+            border-radius:0;
+            margin-left:-5px;
+            border-radius: 0 35px 35px 0;
+        }
+        &__input{
+            padding:18px 30px;
+            min-width:405px;
+            min-height:50px;
+            border-radius: 35px 0 0 35px;
+            border:none;
+        }
+    }
+}

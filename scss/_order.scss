@@ -1,0 +1,64 @@
+.order {
+    min-height: 634px;
+    background: url("../img/order_bg.png") no-repeat 200px 120px;
+    background-size: 40%;
+
+    &-block {
+        
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 10%;
+        margin-right: 180px;
+        &__title{
+            position: relative;
+            padding-left:25px;
+            &::before{
+                content:"";
+                position: absolute;
+                width:5px;
+                height:40px;
+                background-color: #18a3dd;
+                left:0;
+                top:10px;
+                border-radius:4px;
+            }
+        }
+        &__name {
+            color: #333740;
+            font-family: Raleway;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 35px;
+            text-transform: uppercase;
+            margin: 0;
+            margin-bottom: 5px;
+         
+        }
+
+        &__text {
+            color: #666666;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 0.4px;
+            line-height: 24px;
+        }
+
+        &__price {
+            color: #333740;
+            font-family: Lato;
+            font-size: 20px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            line-height: 24px;
+        }
+        &__btn{
+            margin:0;
+            margin-top:10px;
+            display:inline-block;
+        }
+    }
+
+}
