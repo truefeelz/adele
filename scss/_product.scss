@@ -1,11 +1,12 @@
 .product {
     position: relative;
     min-height: 500px;
-    background: url("../img/product_bg.png") no-repeat left center;
+    background:  url("../img/product_bg.png") no-repeat left center;
+   
 
     &-wrap {
         position: relative;
-        min-height: 350px;
+        min-height: 200px;
         background-color: #0f0816;
         background-image: linear-gradient(-40deg, #0f0816 0%, #21172b 90%, #21172b 100%);
         margin-top: 50px;
