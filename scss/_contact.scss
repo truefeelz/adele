@@ -4,6 +4,7 @@
     &-block{
         max-width:560px;
         margin:0 auto;
+        padding:0 20px;
         &-form{     
             &-input,
             &-textarea{
@@ -22,7 +23,7 @@
             &-btn{
                 border:none;
                 margin:0 auto;
-                width:226px;
+                min-width:226px;
                 cursor: pointer;
             }      
             &-row{
@@ -43,6 +44,41 @@
                 flex-basis:100%;
             }
 
+        }
+    }
+}
+@media(max-width:768px){
+.contact{
+    &-block{
+        &-form{  
+            &-row{
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            &:first-child .contact-block-form-group:first-child input,
+            &:first-child .contact-block-form-group:last-child input{
+                margin-left:0;
+                width:100%;
+                      
+            }
+
+            &-group{
+                flex-basis:auto;
+                min-height:100px;
+                width:100%;
+            }
+
+            
+        }
+    }
+    }
+}
+
+@media(max-width:768px){
+    .contact{
+        &-block{
+            max-width:360px;
         }
     }
 }

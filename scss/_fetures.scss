@@ -2,13 +2,13 @@
     padding-top:0;
     width:100%;
     min-height:610px;
-    background:#fafcfc url("../img/fetures-img.png") no-repeat center 280px;
+    background:#fafcfc url("../img/fetures-img.png") no-repeat center 270px;
 
     &-block{
         display: flex;
         justify-content:space-between;
         align-items: center;
-        flex-wrap: wrap;
+
         &__content{
             margin-top:50px;
             &:not(:last-child){
@@ -48,3 +48,41 @@
     }
 }
    
+
+@media(max-width:991px){
+    .fetures{
+        background-size:auto;
+        min-height:560px;
+        &-block{
+            &__content{
+                &:not(:last-child){
+                    margin-left:0px;
+                }
+                &:last-child{
+                    margin-right:0px;
+                }
+            }
+            &__title{
+                font-size:14px;
+                height: 35px;
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .fetures{
+        background-size:20%;
+        background-position: bottom center;
+    }
+}
+
+@media(max-width:601px){
+    .fetures{
+        background-image: none;
+        &-block{
+            flex-direction: column;
+            
+
+        }
+    }
+}

@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,18 +16,53 @@
         integrity="sha384-Sbwc59I1SOoVoCGgBCwAe/M1j5a9cHixHv/7x9vOxORnT73jUaxyK0paobkk3JSt" crossorigin="anonymous">
     <title>Adele</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="navbar">
+    <header class="header" id="header">
+
+
+        <div class="navbar">
+
+            <div class="container">
+                <div class="menu">
+                       <div class="container">
+                   
+                        <nav>
+                                
+                            <ul class="menu__nav">
+                                <li>
+                                    <a class="menu__link" href="#offers">Offer</a>
+                                </li>
+                                <li>
+                                    <a class="menu__link" href="#results">Real Results</a>
+                                </li>
+                                <li>
+                                    <a class="menu__link" href="#feedback">Feedback</a>
+                                </li>
+                                <li>
+                                    <a class="menu__link" href="#facts">Facts</a>
+                                </li>
+                                <li>
+                                    <a class="menu__link" href="#cert">Certifications</a>
+                                </li>
+                                <li>
+                                    <a class="menu__link" href="#inquire">Inquire</a>
+                                </li>
+                            </ul>
+                        
+                        </nav>
+                    </div>
+                    
+                </div>
                 <div class="navbar-wrap">
+
                     <div class="logo navbar_logo">
-                        <img class="logo__img" src="img/logo.svg" alt="Supplemet">
+                        <a href="#header"><img class="logo__img" src="img/logo.svg" alt="Supplemet"></a>
                         <strong class="logo__text">Supplemet</strong>
                     </div>
-                    <span style="color:#666666;">
-                        <i class="fas fa-bars fa-2x"></i>
-                    </span>
+                    <button class="navbar__btn">
+                        <i class="fas fa-bars fa-2x" style="color:#666666;"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -44,11 +80,10 @@
                                 diam nonummy nibh euismod tincidunt.
                             </p>
                             <div class="hero-block-links">
-                                <a class="btn hero-block__btn" href="#">Order Now</a>
-                                <a class="hero-block__btn hero-block__btn-video" href="#">Watch The Video</a>
-                                <span style="color: #18a3dd;">
-                                    <i class="fas fa-play-circle"></i>
-                                </span>
+                                <a class="btn hero-block__btn" href="#order">Order Now</a>
+                                <a class="hero-block__btn hero-block__btn-video" href="#">Watch The Video <span
+                                        class="fas fa-play-circle" style="color: #18a3dd;"></span></a>
+
                             </div>
                         </div>
                     </div>
@@ -57,38 +92,38 @@
         </div>
     </header>
     <main>
-        <section class="product section">
+        <section class="product section" >
             <div class="product-wrap-bg">
-            <div class="product-wrap">
-                <div class="container">
-                <div class="product-block">
-                    <div class="product-block__items">
-                        <h2 class="product-block__count">100</h2>
-                        <div class="product-block__description">
-                            <p>MG</p>
-                            <p>Per Capsule</p>
-                        </div>
-                    </div>
-                    <div class="product-block__items">
-                        <h2 class="product-block__count">60</h2>
-                        <div class="product-block__description">
-                            <p>Capsules</p>
-                            <p>Per Bottle</p>
-                        </div>
-                    </div>
-                    <div class="product-block__items">
-                        <h2 class="product-block__count">900</h2>
-                        <div class="product-block__description">
-                            <p>PLUS</p>
-                            <p>Satisfied Customers</p>
+                <div class="product-wrap">
+                    <div class="container">
+                        <div class="product-block">
+                            <div class="product-block__items">
+                                <h2 class="product-block__count">100</h2>
+                                <div class="product-block__description">
+                                    <p>MG</p>
+                                    <p>Per Capsule</p>
+                                </div>
+                            </div>
+                            <div class="product-block__items">
+                                <h2 class="product-block__count">60</h2>
+                                <div class="product-block__description">
+                                    <p>Capsules</p>
+                                    <p>Per Bottle</p>
+                                </div>
+                            </div>
+                            <div class="product-block__items">
+                                <h2 class="product-block__count">900</h2>
+                                <div class="product-block__description">
+                                    <p>PLUS</p>
+                                    <p>Satisfied Customers</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-            </div>
         </section>
-        <section class="fetures section">
+        <section class="fetures section" id="offers">
             <div class="container">
                 <h2 class="section__title"><span>Fetures</span><span>We offer</span></h2>
                 <p class="section__subtitle">Don`t forget to check these real success.</p>
@@ -120,84 +155,153 @@
                 </div>
             </div>
         </section>
-        <section class="people section">
+        <section class="people section" id="results">
             <div class="container">
                 <h2 class="section__title"><span>Real Man</span><span>Real Results</span></h2>
                 <p class="section__subtitle">Don`t forget to check these real success.</p>
                 <div class="people-block">
                     <div class="slider-container">
-                        <input type="radio" class="slide_img" name="slide_img" id="img_1" checked>
-                        <input type="radio" class="slide_img" name="slide_img" id="img_2">
-                        <input type="radio" class="slide_img" name="slide_img" id="img_3">
-                        <div class="slides" id="first">
-                            <img src="img/slides_1.png" alt="">
-                        </div>
-                        <div class="slides" id="second">
-                            <img src="img/" alt="">
-                        </div>
-                        <div class="slides" id="third">
-                            <img src="img/" alt="">
+                        
+                        <div class="slider-container__content" id="content_1">
+                                <img class="image1" src="https://i.ibb.co/yR7fbQd/img-before.png">
+                                <img class="image2" src="https://i.ibb.co/khVrCXV/img-after.png">
+    
+                                <div class="slider-container__item">
+                                    <div class="slider-container__title">
+                                        <div class="slider-container__title-before">
+                                            <strong class="slider-container-weight-before">95</strong><span> kg</span>
+                                            <p>Before</p>
+                                        </div>
+                                        <div class="slider-container__title-after">
+                                            <strong class="slider-container-weight-after">75</strong><span> kg</span>
+                                            <p>After</p>
+                                        </div>
+                                    </div>
+                                    <div class="slider-container__title">
+                                        <strong class="slider-container__name">
+                                            Alex Petrov
+                                        </strong>
+                                        <span class="slider-container-age">Age:<span
+                                                class="slider-container__age">32</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-container__content slider-container__content_active" id="content_2">
+                            
+
+                                <img class="image1" src="https://i.ibb.co/yR7fbQd/img-before.png">
+                                <img class="image2" src="https://i.ibb.co/khVrCXV/img-after.png">
+    
+                                <div class="slider-container__item">
+                                    <div class="slider-container__title">
+                                        <div class="slider-container__title-before">
+                                            <strong class="slider-container-weight-before">87</strong><span> kg</span>
+                                            <p>Before</p>
+                                        </div>
+                                        <div class="slider-container__title-after">
+                                            <strong class="slider-container-weight-after">63</strong><span> kg</span>
+                                            <p>After</p>
+                                        </div>
+                                    </div>
+                                    <div class="slider-container__title">
+                                        <strong class="slider-container__name">
+                                            Mike Anderson
+                                        </strong>
+                                        <span class="slider-container-age">Age:<span
+                                                class="slider-container__age">28</span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                               
+                            <div class="slider-container__content" id="content_3">
+                            
+
+                                    <img class="image1" src="img/img_before.png">
+                                    <img class="image2" src="img/img_after.png">
+        
+                                    <div class="slider-container__item">
+                                        <div class="slider-container__title">
+                                            <div class="slider-container__title-before">
+                                                <strong class="slider-container-weight-before">80</strong><span> kg</span>
+                                                <p>Before</p>
+                                            </div>
+                                            <div class="slider-container__title-after">
+                                                <strong class="slider-container-weight-after">70</strong><span> kg</span>
+                                                <p>After</p>
+                                            </div>
+                                        </div>
+                                        <div class="slider-container__title">
+                                            <strong class="slider-container__name">
+                                                Nicola Jackson
+                                            </strong>
+                                            <span class="slider-container-age">Age:<span
+                                                    class="slider-container__age">25</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                        <input type="radio" class="slider-container-img" id="content_1" name="content_1" >
+                        <input type="radio" class="slider-container-img" id="content_2" name="content_2"  checked>
+                        <input type="radio" class="slider-container-img" id="content_3" name="content_3" >
+                        <div class="slider-container-switchers">
+                            <label class="slider-container-switcher" id="switcher1" for="content_1"></label>
+                            <label class="slider-container-switcher" id="switcher2" for="content_2"></label>
+                            <label class="slider-container-switcher" id="switcher3" for="content_3"></label>
                         </div>
                         <div id="arrow_next">
-                            <label for="img_1"><img src="img/arrow_next.png" aria-hidden="true">
-                            </label>
-                            <label for="img_2"><img src="img/arrow_next.png" aria-hidden="true">
-                            </label>
-                            <label for="img_3"><img src="img/arrow_next.png" aria-hidden="true">
-                            </label>
+                            <img class="img_arrow" src="img/arrow_next.svg"></img>
                         </div>
                         <div id="arrow_prev">
-                            <label for="img_1"><img src="img/arrow_prev.png" aria-hidden="true">
-                            </label>
-                            <label for="img_2"><img src="img/arrow_prev.png" aria-hidden="true">
-                            </label>
-                            <label for="img_3"><img src="img/arrow_prev.png" aria-hidden="true">
-                            </label>
+                            <img class="img_arrow" src="img/arrow_prev.svg"></img>
+
                         </div>
-                        <div class="switchers">
-                            <label class="switcher" id="switcher1" for="img_1"></label>
-                            <label class="switcher" id="switcher2" for="img_2"></label>
-                            <label class="switcher" id="switcher3" for="img_3"></label>
-                        </div>
-                    </div>
-                    <div class="people-block-slider">
-                        <div class="people-block-slider__slides people-block-slider__slide1"></div>
-                        <div class="people-block-slider__slides people-block-slider__slide2"></div>
-                        <div class="people-block-slider__slides people-block-slider__slide3"></div>
-                    </div>
-                    <div class="people-block-controls">
-                        <label for="slide1"></label>
-                        <label for="slide2"></label>
-                        <label for="slide3"></label>
                     </div>
                 </div>
             </div>
+            </div>
         </section>
-        <section class="feedback section">
+        <section class="feedback section" id="feedback">
             <div class="container">
                 <h2 class="section__title feedback__title"><span>Client</span><span>Testimonials</span></h2>
                 <p class="section__subtitle feedback__subtitle">We don`t just sell,we`re beloved too.</p>
                 <div class="feedback-block">
-                    <blockquote class="feedback-block__content">
-                        <p class="feedback-block__text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut
-                            laoreet<br> dolore magna aliquam erat volutpat. Ut wisi enim ad minimveniam, quis nostrud
-                            exerci tation ulla
-                            mcorper sus-<br>cipit lobortis nisl ut aliquip. sed diam nonummy nibh euismod.
-                        </p>
-                        <cite class="feedback-block__author">
-                            <div class="feedback-block__img" alt="Photo">
-                            </div>
-                            <div class="feedback-block__kek">
-                                <span class="feedback-block__author__name">Alena Parker</span>
-                                <span class="feedback-block__author__city">Sydney,Australia</span>
-                            </div>
-                        </cite>
-                    </blockquote>
+                    <div class="slider-container">
+                        <div class="slider-container__content1" >
+
+                            <blockquote class="feedback-block__content">
+                                <p class="feedback-block__text">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod
+                                    tincidunt ut
+                                    laoreet<br> dolore magna aliquam erat volutpat. Ut wisi enim ad minimveniam,
+                                    quis nostrud
+                                    exerci tation ulla
+                                    mcorper sus-<br>cipit lobortis nisl ut aliquip. sed diam nonummy nibh euismod.
+                                </p>
+                                <cite class="feedback-block__author">
+                                    <div class="feedback-block__img" alt="Photo">
+                                    </div>
+                                    <div class="feedback-block__info">
+                                        <span class="feedback-block__author__name">Alena Parker</span>
+                                        <span class="feedback-block__author__city">Sydney,Australia</span>
+                                    </div>
+                                </cite>
+                            </blockquote>
+                        </div>
+                        
+                        <input type="radio" class="slider-container-img" name="slider-container-img" id="img_1">
+                        <input type="radio" class="slider-container-img" name="slider-container-img" id="img_2" checked>
+                        <input type="radio" class="slider-container-img" name="slider-container-img" id="img_3">
+                        <div class="slider-container-switchers">
+                            <label class="slider-container-switcher" id="switcher1" for="img_1"></label>
+                            <label class="slider-container-switcher" id="switcher2" for="img_2"></label>
+                            <label class="slider-container-switcher" id="switcher3" for="img_3"></label>
+                        </div>
+
+                    </div>
                 </div>
         </section>
-        <section class="facts section">
+        <section class="facts section" id="facts">
             <div class="container">
                 <h2 class="section__title"><span>Suplement</span><span>Facts</span></h2>
                 <p class="section__subtitle">We`re brave enough to show what we use.</p>
@@ -241,7 +345,7 @@
                                 <td>8</td>
                             </tr>
                         </table>
-                        <a class="btn" href="#">Download Specs<span>(50KB)</span></a>
+                        <a class="btn facts-block__btn" href="#">Download Specs</a>
                     </div>
                     <div class="facts-block__item">
                         <div class="facts-block__img">
@@ -263,7 +367,7 @@
                 </div>
             </div>
         </section>
-        <section class="certifications section">
+        <section class="certifications section" id="cert">
             <div class="container">
                 <h2 class="section__title">Certifications</h2>
                 <p class="section__subtitle">We don`t sell craps.We`re certified.</p>
@@ -286,7 +390,7 @@
                 </div>
             </div>
         </section>
-        <section class="order section">
+        <section class="order section" id="order">
             <div class="container">
                 <div class="order-block">
                     <div class="order-block__items">
@@ -303,7 +407,7 @@
                             cing elit, sed diam nonummy nibh euismod tincidu<br>
                             nt ut laoreet.
                         </p>
-                        <a class="btn order-block__btn" href="#">Order Now</a>
+                        <a class="btn order-block__btn" href="">Order Now</a>
                     </div>
                 </div>
             </div>
@@ -323,7 +427,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact section">
+        <section class="contact section" id="inquire">
             <div class="container">
                 <h2 class="section__title"><span>Inquire</span><span>Your Issue</span></h2>
                 <p class="section__subtitle">We’re always happy to reply our customers.</p>
@@ -404,6 +508,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

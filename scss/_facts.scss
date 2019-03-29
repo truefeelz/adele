@@ -5,6 +5,15 @@
         display:flex;
         justify-content: center;
         align-items: center;
+        &__btn{
+            position: relative;
+            &::after{
+                content:"(50KB)";
+                position: absolute;
+                right:40px;
+                top:15px;
+            }
+        }
         &__img{
             background: url("../img/facts_img.png") no-repeat;
             background-size: 200%;
@@ -84,5 +93,47 @@
             
         }
 
+    }
+}
+@media(max-width:995px){
+    .facts{
+        &-block{
+            &-table{
+                min-width:260px;
+                & th{
+                    font-size:20px; 
+                }
+                & th:last-child{
+                    font-size:14px;
+                    width:100px;
+                }
+            }
+            &__btn{
+                font-size:14px;
+            }
+            &__item{
+                padding:0 30px;
+            }
+        }
+    }
+}
+@media(max-width:1199px)
+{
+    .facts{
+        &-block{
+            &__text{
+                font-size:13.5px;
+            }
+        
+            }
+        }
+}
+@media(max-width:768px){
+    .facts{
+        &-block{
+            &__item:last-child{
+                display:none;
+            }
+        }
     }
 }
